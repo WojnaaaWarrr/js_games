@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BlackJack</title>
+        <link rel="stylesheet" href="bjstyle.css">
+        <script>
+            const possible_cards=[
+                "AH","KH","QH","JH","TH","9H","8H","7H","6H","5H","4H","3H","2H",
+                "AD","KD","QD","JD","TD","9D","8D","7D","6D","5D","4D","3D","2D",
+                "AS","KS","QS","JS","TS","9S","8S","7S","6S","5S","4S","3S","2S",
+                "AC","KC","QC","JC","TC","9C","8C","7C","6C","5C","4C","3C","2C",
+            ];
+            let cards_played=[];
+
+
+            function hit(){
+
+            }
+            function stand(){
+
+            }
+            function start(){
+                document.getElementById("menu").style.visibility="hidden";
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="table">
+                <div class="text">
+                    Dealer: 
+                    <div class="dealerscore">0</div>
+                </div>
+                <div class="cardsdealer">
+                    <div class="card">
+                        <img src="img/cards/AS.png">
+                    </div>
+                    <div class="card">
+                        <img src="img/cards/AS.png">
+                        <img src="img/cards/back.png" class="back">
+                    </div>
+                </div>
+                <div class="text">
+                    You: 
+                    <div class="playerscore">0</div>
+                </div>
+                <div class="cardsplayer">
+                    <div class="card">
+                        <img src="img/cards/AS.png">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="controls">
+                <div class="buttons">
+                    <button onclick="hit()" class="hit">HIT</button>
+                    <button onclick="stand()" class="stand">STAND</button>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="title">
+                BLACKJACK
+            </div>
+            <div class="menubuttons">
+                <button class="start" onclick="start()">START</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
